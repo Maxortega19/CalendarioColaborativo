@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@100&display=swap');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+html,
+body {
+	height: 100%;
+	display: grid;
+	font-family: 'Open Sans', sans-serif;
+	background: url('../img/fondo.webp') no-repeat center center;
+}
+
+#calendario {
+	width: 450px;
+	padding: 25px 0px;
+	margin: 0 auto;
+}
+
+.mes {
+	padding: 25px;
+	width: 100%;
+	background: black;
+	text-align: center;
+}
+
+.mes ul {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+
+}
+
+.mes ul li {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+
+#semanas {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	margin: 0;
+	padding: 1% 5%;
+	background-color: black;
+}
+
+#semanas li {
+	color: #424153;
+	text-align: center;
+	font-weight: bold;
+}
+
+#dias {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	padding: 5%;
+	background-color: black;
+	margin: 0;
+}
+
+#dias li {
+	list-style-type: none;
+	text-align: center;
+	font-size: 16px;
+	color: #424153;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+#dias li:hover {
+	transition: 1s;
+	background-color: #424153 !important;
+	color: white !important;
+	cursor: pointer;
+}
+
+#dias li.vacia:hover {
+	background-color: black !important;
+	cursor: auto !important;
+}
+
+
+#dias li.activo {
+	background: #663399 !important;
+	color: white;
+}
+
+#dias li.cursado {
+	background: #333399;
+	color: white;
+}
+
+#sig,
+#prev {
+	cursor: pointer;
+}
+
+.info {
+	padding: 12px;
+	background-color: #333399;
+	color: white;
+	text-align: center;
+}
+
+.hoy {
+	padding: 12px;
+	background-color: #663399;
+	color: white;
+	text-align: center;
+}
+
+.fecha {
+	padding: 12px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	padding: 15px;
+	background-color: black;
+	color: white;
+  }
